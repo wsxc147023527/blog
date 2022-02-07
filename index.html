@@ -71,9 +71,9 @@
 								<article v-for="item in data2">
 									<header>
 										<span class="date">{{item.time}}</span>
-										<h2><a href="#">{{item.title}}</a></h2>
+										<h2><a @click="link_handlr(item)">{{item.title}}</a></h2>
 									</header>
-									<a href="#" class="image fit"><img :src="item.img" alt="" /></a>
+									<a @click="link_handlr(item)" class="image fit"><img :src="item.img" alt="" /></a>
 									<p>{{item.content}}</p>
 									<ul class="actions special">
 										<li><a @click="link_handlr(item)" class="button">點擊進入</a></li>

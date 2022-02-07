@@ -62,7 +62,9 @@ const wrapper = Vue.createApp({
     methods: {
         link_handlr(item){
             let img_link = item.img.split('.');
+            // console.log(img_link)
             let img_link2 = img_link[1] + "." + img_link[2]
+            console.log(img_link2)
             let new_link = "https://wsxc147023527.github.io/blog" +  img_link2
             document.location.href=new_link;
         }
