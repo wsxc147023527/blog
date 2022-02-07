@@ -53,14 +53,19 @@ let data = [
 const wrapper = Vue.createApp({
     data(){
         let data2=[],
-        link = "https://wsxc147023527.github.io/blog/"
+        link = ""
         return{
             data2:data,
             link
         }
     },
     methods: {
-        
+        link_handlr(item){
+            let img_link = item.img.split('.');
+            let img_link2 = img_link[1] + "." + img_link[2]
+            let new_link = "https://wsxc147023527.github.io/blog" +  img_link2
+            document.location.href=new_link;
+        }
     },
 })
 

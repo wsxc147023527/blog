@@ -68,7 +68,6 @@
 
 						<!-- Posts -->
 							<section class="posts">
-
 								<article v-for="item in data2">
 									<header>
 										<span class="date">{{item.time}}</span>
@@ -77,12 +76,11 @@
 									<a href="#" class="image fit"><img :src="item.img" alt="" /></a>
 									<p>{{item.content}}</p>
 									<ul class="actions special">
-										<li><a :href="link + item.img" class="button">點擊進入</a></li>
+										<li><a @click="link_handlr(item)" class="button">點擊進入</a></li>
 									</ul>
 								</article>
-								
 							</section>
-
+							
 						<!-- Footer -->
 							<footer>
 								<div class="pagination">
