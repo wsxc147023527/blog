@@ -3,7 +3,7 @@ let data = [
         time:"2022.02.03",
         title:"達摩不倒翁",
         img:"./img/達母.jpg",
-        content:"達摩不倒翁基本是作為一種擺設和祈願的東西，在日本非常的受歡迎，人們總會用達摩不倒翁來許願、祈福，不僅如此達摩不倒翁還象徵著人可以不怕挫折；會搖晃，但是推不倒的精神呦。"
+        content:"達摩不倒翁基本是作為一種擺設和祈願的東西，在日本非常的受歡迎，人們總會用達摩不倒翁來許願、祈福，不僅如此達摩不倒翁還象徵著人可以不怕挫折；會搖晃，但是推不倒的精神呦。",
     },
     {
         time:"2022.02.07",
@@ -52,9 +52,11 @@ let data = [
 
 const wrapper = Vue.createApp({
     data(){
-        let data2=[]
+        let data2=[],
+        link = "https://wsxc147023527.github.io/blog/"
         return{
-            data2:data
+            data2:data,
+            link
         }
     },
     methods: {
